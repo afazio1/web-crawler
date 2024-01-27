@@ -20,6 +20,7 @@ The Search Tester GUI allowed me to query the web archive.
 In my program, I used Go's built-in Time library to record the Crawl Statistics every minute. The statistics included:
 - Crawl Speed: Pages / second
 - Crawled to Queued Ratio / second
+
 ![Crawl speed graph](https://github.com/afazio1/web-crawler/blob/main/images/crawl-speed-graph.png)
 
 ![Crawl ratio graph](https://github.com/afazio1/web-crawler/blob/main/images/crawl-ratio-graph.png)
