@@ -1,4 +1,4 @@
-module hw1
+module github.com/afazio/web-crawler
 
 go 1.21.2
 
