@@ -3,10 +3,10 @@
 ## Overview
 For HW1, I decided to choose Option 1.2 and write a web crawler of my own. This web crawler is written in Go and uses MongoDB as a web archive.
 
-![[images/cmd-ui.png]]
+![[./images/cmd-ui.png]]
 ## How it works
 Here's the the data flow of the web crawler:
-![[images/web-crawler-diagram.png]]
+![[./images/web-crawler-diagram.png]]
 
 ## Web Archive
 To store the content of crawled web pages, I used MongoDB, a NoSQL database with a built-in Search Index functionality. 
@@ -14,15 +14,15 @@ To store the content of crawled web pages, I used MongoDB, a NoSQL database with
 I decided to store the `url`, `title`, and first 500 characters after the `<body>` tag as `content`. Then, I created a Search Index on the `title` and `content` fields, using MongoDB's standard keyword analyzer. This created an inverted index table which mapped keywords to webpages. 
 
 The Search Tester GUI allowed me to query the web archive.
-![[images/web-archive.png]]
+![[./images/web-archive.png]]
 
 ## Performance
 In my program, I used Go's built-in Time library to record the Crawl Statistics every minute. The statistics included:
 - Crawl Speed: Pages / second
 - Crawled to Queued Ratio / second
-![images/crawl-speed-graph.png](file:///Users/alexafazio/Desktop/code-projects/gatech/cs-4675/HW1/images/crawl-speed-graph.png)
+![./images/crawl-speed-graph.png](file:///Users/alexafazio/Desktop/code-projects/gatech/cs-4675/HW1/images/crawl-speed-graph.png)
 
-![images/crawl-ratio-graph.png](file:///Users/alexafazio/Desktop/code-projects/gatech/cs-4675/HW1/images/crawl-ratio-graph.png)
+![./images/crawl-ratio-graph.png](file:///Users/alexafazio/Desktop/code-projects/gatech/cs-4675/HW1/images/crawl-ratio-graph.png)
 ## Experience
 
 ### Pros
